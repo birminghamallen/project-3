@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Buybitbybit.com",
+    
   },
   plugins: [
     "gatsby-plugin-image",
@@ -13,5 +14,12 @@ module.exports = {
       },
     },
     "gatsby-plugin-mdx",
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.buybitbybit.com`,
+      },
+    },
+
   ],
 };
